@@ -1,8 +1,8 @@
 const initialPositions = {
-  card1: { translateX: -50, translateY: -200 },
-  card2: { translateX: -50 },
-  card3: { translateX: 50 },
-  card4: { translateX: 50, translateY: -200 },
+  card1: { translateX: -80, translateY: -100 },
+  card2: { translateX: -80, translateY: 140},
+  card4: { translateX: 80, translateY: 140},
+  card3: { translateX: 80, translateY: -100 },
 };
 
 anime({
@@ -16,7 +16,7 @@ anime({
       top: '100px',
       fontSize: ['3rem', '2.3em'],
       easing: "linear",
-      duration: 1000, 
+      duration: 1500, 
       complete: () => {
         anime({
           targets: ".hide",

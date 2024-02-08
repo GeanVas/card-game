@@ -1,44 +1,45 @@
 .cards-container {
   position: absolute;
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
-  /* display: grid;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-items: center; */
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .card {
+  width: 30%;
+  height: 30%;
   position: absolute;
-  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .card img {
-  width: 30%;
+  width: 100%;
   aspect-ratio: 9/16;
-  /* height: 15rem; */
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.5s;
 }
 
 .hide {
-  /* display: none; */
   opacity: 0;
 }
 
 body {
-  background-color: #333;
+  background-color: #D3C5E5;
   /* font-family: 'Luckiest Guy', cursive; */
   /* font-size: 40px; */
 }
 
 main {
-  /* display: grid; */
-  /* place-items: center; */
-  /* position: relative; */
   height: 100vh;
 }
 
@@ -53,6 +54,10 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
+  color: #735DA5;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 
   width: 100%;
   opacity: 0;
